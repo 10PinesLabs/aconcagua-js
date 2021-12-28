@@ -9,7 +9,7 @@ const
 
 suite('Base units', () => {
   test('returning the base unit', () =>
-    assert.areEqual(dollar.baseUnit(), dollar)
+    assert.areEqual(dollar.baseUnit(), dollar),
   );
   
   test('convert amount to base unit', () => {
@@ -18,23 +18,23 @@ suite('Base units', () => {
   });
   
   test('convert to base unit', () =>
-    assert.areEqual(dollar.convertToBaseUnit(tenDollars), tenDollars)
+    assert.areEqual(dollar.convertToBaseUnit(tenDollars), tenDollars),
   );
   
   test('denominator is the null unit', () =>
-    assert.areEqual(dollar.denominator(), NullUnit)
+    assert.areEqual(dollar.denominator(), NullUnit),
   );
   
   test('basic name', () =>
-    assert.areEqual(dollar.name(), 'dollar')
+    assert.areEqual(dollar.name(), 'dollar'),
   );
   
   test('name for one', () =>
-    assert.areEqual(dollar.nameForOne(), 'dollar')
+    assert.areEqual(dollar.nameForOne(), 'dollar'),
   );
 
   test('default name for many', () =>
-    assert.areEqual(dollar.nameForMany(), 'dollars')
+    assert.areEqual(dollar.nameForMany(), 'dollars'),
   );
   
   test('name for quantity', () => {

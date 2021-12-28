@@ -5,7 +5,8 @@
   "main": "aconcagua.js",
   "scripts": {
     "test": "npx testy",
-    "lint": "npx eslint"
+    "lint": "npx eslint .",
+    "lint:fix": "npx eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   "homepage": "https://github.com/10Pines/aconcagua-js#readme",
   "devDependencies": {
     "@pmoo/testy": "^6.0.0",
-    "eslint": "^7.9.0"
+    "eslint": "^7.9.0",
+    "eslint-config-ngarbezza": "^0.0.1"
   }
 }

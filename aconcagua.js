@@ -91,12 +91,16 @@ class SimpleMeasure extends Measure {
   }
   
   plus(measure) {
-    if (measure === 0) return this;
+    if (measure === 0) {
+      return this; 
+    }
     return new SimpleMeasure(this.amount() + measure.amount(), this.unit());
   }
   
   minus(measure) {
-    if (measure === 0) return this;
+    if (measure === 0) {
+      return this; 
+    }
     return new SimpleMeasure(this.amount() - measure.amount(), this.unit());
   }
 }

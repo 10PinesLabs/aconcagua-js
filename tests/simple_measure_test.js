@@ -37,7 +37,7 @@ suite('Simple Measures', () => {
   });
   
   test('"with" message', () =>
-    assert.areEqual(dollar.with(10), tenDollars)
+    assert.areEqual(dollar.with(10), tenDollars),
   );
   
   test('addition - values', () => {
@@ -47,19 +47,19 @@ suite('Simple Measures', () => {
   });
   
   test('addition - neutral', () =>
-    assert.areEqual(tenDollars.plus(zeroDollars), tenDollars)
+    assert.areEqual(tenDollars.plus(zeroDollars), tenDollars),
   );
   
   test('addition - commutativity', () =>
-    assert.areEqual(tenDollars.plus(oneDollar), oneDollar.plus(tenDollars))
+    assert.areEqual(tenDollars.plus(oneDollar), oneDollar.plus(tenDollars)),
   );
   
   test('addition - associativity', () =>
-    assert.areEqual(tenDollars.plus(zeroDollars.plus(oneDollar)), tenDollars.plus(zeroDollars).plus(oneDollar))
+    assert.areEqual(tenDollars.plus(zeroDollars.plus(oneDollar)), tenDollars.plus(zeroDollars).plus(oneDollar)),
   );
   
   test('addition - number zero', () =>
-    assert.areEqual(tenDollars.plus(0), tenDollars)
+    assert.areEqual(tenDollars.plus(0), tenDollars),
   );
   
   test('substraction - values', () => {
@@ -69,14 +69,14 @@ suite('Simple Measures', () => {
   });
   
   test('substraction - neutral', () =>
-    assert.areEqual(tenDollars.minus(zeroDollars), tenDollars)
+    assert.areEqual(tenDollars.minus(zeroDollars), tenDollars),
   );
   
   test('substraction - associativity', () =>
-    assert.areEqual(elevenDollars.minus(oneDollar.minus(zeroDollars)), elevenDollars.minus(oneDollar).minus(zeroDollars))
+    assert.areEqual(elevenDollars.minus(oneDollar.minus(zeroDollars)), elevenDollars.minus(oneDollar).minus(zeroDollars)),
   );
   
   test('substraction - number zero', () =>
-    assert.areEqual(tenDollars.minus(0), tenDollars)
+    assert.areEqual(tenDollars.minus(0), tenDollars),
   );
 });
