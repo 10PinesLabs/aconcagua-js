@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/10Pines/aconcagua-js#readme",
   "devDependencies": {
-    "@pmoo/testy": "^5.0.1",
+    "@pmoo/testy": "^6.0.0",
     "eslint": "^7.9.0"
   }
 }
